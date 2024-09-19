@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dine-In</title>
+    <link rel="icon" href="Assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="dineIn.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/dcb56fa4e0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Dine In Navbar Section-->
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Assets/logo.png" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-ride="carousel"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a
+                class="nav-link active"
+                id="nav-items"
+                aria-current="page"
+                href="#sectionHome"
+                >Home</a
+              >
+              <a class="nav-link" id="nav-items" href="#sectionAbout">About</a>
+              <a class="nav-link" id="nav-items" href="#sectionMenu">Menu</a>
+              <a class="nav-link" id="nav-items" href="#sectionServices">Services</a>
+              <a class="nav-link" id="nav-items" href="#sectionContact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--Dine In Banner Section-->
+    <div class="banner-container mt-3" id="sectionHome">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-card card-1">
+              <h1 class="carousel-head pop-left">
+                Welcome to <span class="special-text">Dine-In </span>
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-card card-2">
+              <h1 class="carousel-head pop-left">
+                A <span class="special-text">Feast </span> for the Senses
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-card card-3">
+              <h1 class="carousel-head pop-left">
+                <span class="special-text">Taste </span> the Difference
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Dine In About Section-->
+    <div class="about-container pop-in" id="sectionAbout">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 ">
+            <div class="about-images text-center pop-left">
+              <div class="di-about-container my-3">
+                <div class="di-about-palette">
+                  <div id="di-about-color1" class="di-about-color"></div>
+                  <div id="di-about-color2" class="di-about-color"></div>
+                  <div id="di-about-color3" class="di-about-color"></div>
+                  <div id="di-about-color4" class="di-about-color"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="about-content p-3 pop-right">
+              <h1 class="about-head">
+                Crafting Culinary Delights, One Dish at a Time
+              </h1>
+              <p class="about-details">
+                At Dine-In, we believe that dining is more than just food—it's
+                an experience. Our passion for creating mouth-watering dishes is
+                matched only by our commitment to delivering a warm, welcoming
+                atmosphere.
+              </p>
+              <h6 class="about-sub-head">
+                A Taste of Tradition and Innovation
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h1 class="main-header p-3 pop-in" id="sectionMenu">Menu</h1>
+
+    <!--Dine In Menu Section-->
+    <div class="menu-container">
+        <div class="menu-card p-3 m-1">
+            <div class="di-menu-card menu-card-1 pop-in">
+                <h1 class="di-menu-name">Indian Cuisine</h1>
+            </div>
+        </div>
+        <div class="menu-card p-3 m-1">
+            <div class="di-menu-card menu-card-2 pop-in">
+                <h1 class="di-menu-name">Starters</h1>
+            </div>
+        </div>
+        <div class="menu-card p-3 m-1">
+            <div class="di-menu-card menu-card-3 pop-in">
+                <h1 class="di-menu-name">Coldrinks</h1>
+            </div>
+        </div>
+        <div class="menu-card p-3 m-1">
+            <div class="di-menu-card menu-card-4 pop-in">
+                <h1 class="di-menu-name">Veg</h1>
+            </div>
+        </div>
+        <div class="menu-card p-3 m-1">
+            <div class="di-menu-card menu-card-5 pop-in">
+                <h1 class="di-menu-name">Special</h1>
+            </div>
+        </div>
+        <div class="menu-card p-3 m-1">
+            <div class="di-menu-card menu-card-6 pop-in">
+                <h1 class="di-menu-name">Non-Veg</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Dine In Speciality Section-->
+    <div class="special-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <div class="special-card p-3 pop-left">
+                        <h1 class="special-card-name">Delicious Deals Await!</h1>
+                        <p class="special-card-details">
+                            Looking for something extra? Get a complimentary dessert with every meal on weekdays from 2 PM to 5 PM. Come for the food, stay for the sweet surprise!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <div class="di-special-main p-3 pop-in">
+                        <div class="di-special-card" id="c1"></div>
+                        <div class="di-special-card" id="c2"></div>
+                        <div class="di-special-card" id="c3"></div>
+                        <div class="di-special-card" id="c4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="main-header p-3 pop-in" id="sectionServices">Services</h1>
+
+    <!--Dine In Services Section-->
+    <div class="services-container">
+        <div class="service-card pop-in">
+            <i class="fa-solid fa-truck-ramp-box icon"></i>
+            <h1 class="service-name">Home Delivery</h1>
+        </div>
+        <div class="service-card pop-in">
+            <i class="fa-solid fa-boxes-packing icon"></i>
+            <h1 class="service-name">Take Away</h1>
+        </div>
+        <div class="service-card pop-in">
+            <i class="fa-solid fa-wallet icon"></i>
+            <h1 class="service-name">Online Payment</h1>
+        </div>
+        <div class="service-card pop-in">
+            <i class="fa-solid fa-champagne-glasses icon"></i>
+            <h1 class="service-name">Party Orders</h1>
+        </div>
+    </div>
+
+
+    <h1 class="main-header p-3 pop-in" id="sectionContact">Contacts</h1>
+
+    <!--Dine In Contact Section-->
+    <div class="contact-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="contact-card p-3 pop-in">
+                        <img src="Assets/logo.png" class="contact-logo">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="contact-card p-3 pop-in">
+                        <h1 class="contact-name">Facebook</h1>
+                        <h1 class="contact-name">Instagram</h1>
+                        <h1 class="contact-name">Whatsapp</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="contact-card p-3 pop-in">
+                        <h1 class="contact-name">Home</h1>
+                        <h1 class="contact-name">Menu</h1>
+                        <h1 class="contact-name">Services</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="contact-card p-3 pop-in">
+                        <h1 class="contact-name">Contact Us</h1>
+                        <h1 class="contact-name">Mail Us</h1>
+                        <h1 class="contact-name">Visit Again !!!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="dineIn.js"></script>
+  </body>
+</html>

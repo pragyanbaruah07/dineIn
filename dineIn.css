@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Pacifico&family=Playwrite+CU:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap');
+
+/*Animation Stylings*/
+/* Pop-Left and Pop-Right Initial State */
+.pop-left, .pop-right {
+    opacity: 0;
+    transform: translateX(100%); /* For right */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+  
+  /* Pop-Left */
+  .pop-left {
+    transform: translateX(-100%); /* Move it left off-screen */
+  }
+  
+  /* Pop-Right */
+  .pop-right {
+    transform: translateX(100%); /* Move it right off-screen */
+  }
+  
+  /* When the element comes into view, apply this */
+  .visible.pop-left {
+    transform: translateX(0); /* Move back to its original position */
+    opacity: 1;
+  }
+  
+  .visible.pop-right {
+    transform: translateX(0); /* Move back to its original position */
+    opacity: 1;
+  }
+  
+  
+  
+  .pop-in {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+  
+  .pop-in.visible {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+
+/*Dine In Navbar Styling*/
+.navbar{
+    background-color: black;
+}
+
+.logo{
+    height: 66px;
+    width: 77px;
+}
+
+#nav-items{
+    font-family: "Raleway", "sans-serif";
+    font-size: 27px;
+    color: #bc976d;
+}
+
+.carousel-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.card-1{
+    background-image: url("https://img.freepik.com/free-photo/twigs-leaves-near-lamp-cutlery_23-2147811213.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+}
+
+.card-2{
+    background-image: url("https://img.freepik.com/free-photo/fork-near-plate-with-twig_23-2147811260.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+}
+
+.card-3{
+    background-image: url("https://img.freepik.com/free-photo/cutlery-pot-near-twig_23-2147811215.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+}
+
+.carousel-head{
+    font-family: "Raleway", "sans-serif";
+    font-size: 33px;
+    color: white;
+    margin-top: 11px;
+}
+
+.special-text{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 33px;
+    color: #bc976d;
+    font-weight: 900;
+}
+
+.special{
+    font-family: "Josefin Sans", system-ui;
+    font-size: 17px;
+    color: white;
+}
+
+
+/*Dine In Navbar Styling*/
+.about-container{
+    background-color: #bc976d;
+    display: flex;
+    align-items: center;
+}
+
+
+.about-head{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 33px;
+    color: #463c31;
+    font-weight: 900;
+}
+
+.about-details{
+    font-family: "Josefin Sans", system-ui;
+    font-size: 17px;
+    color: white;
+}
+
+.about-sub-head{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 11px;
+    color: black;
+    font-weight: 900;
+}
+
+.about-images{
+    display: flex;
+    justify-content: center;
+}
+
+/* From Uiverse.io */
+.di-about-container {
+    width: 333px;
+    height: 340px;
+    border-radius: 1em;
+    overflow: hidden;
+    font-family: sans-serif;
+    background: transparent;
+    pointer-events: none;
+  }
+  
+  .di-about-palette {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+  
+  .di-about-palette:hover > #di-about-color-code {
+    opacity: 0;
+  }
+  
+  .di-about-color {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform-origin: center;
+    transition: 0.3s ease-in-out;
+    box-sizing: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .di-about-color span {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  #di-about-color1 {
+    background-image: url("https://img.freepik.com/free-photo/black-wooden-table_417767-153.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+    rotate: 45deg;
+    translate: 212.13px 0;
+    outline: 0 solid #CECE5A;
+    z-index: 9;
+  }
+  
+  #di-about-color1:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #CECE5A;
+  }
+  
+  #di-about-color2 {
+    background-image: url("https://img.freepik.com/free-photo/lovely-couple-sitting-coffeeshop_23-2148422418.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+    rotate: 45deg;
+    translate: 0 212.13px;
+    outline: 0 solid #FFE17B;
+    z-index: 9;
+  }
+  
+  #di-about-color2:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #FFE17B;
+  }
+  
+  #di-about-color2 span {
+    color: #1A1A1A;
+  }
+  
+  #di-about-color3 {
+    background-image: url("https://img.freepik.com/free-photo/elegant-modern-luxury-home-interior-illuminated-night-generated-by-ai_24640-89363.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+    rotate: 45deg;
+    translate: -212.13px 0;
+    outline: 0 solid #FD8D14;
+    z-index: 9;
+  }
+  
+  #di-about-color3:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #FD8D14;
+  }
+  
+  #di-about-color4 {
+    background-image: url("https://img.freepik.com/free-photo/close-up-japanese-street-food-shop_23-2149287848.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+    background-size: cover;
+    rotate: 45deg;
+    translate: 0 -212.13px;
+    outline: 0 solid #C51605;
+    z-index: 9;
+  }
+  
+  #di-about-color4:hover {
+    translate: 0 0;
+    rotate: 0deg;
+    z-index: 99;
+    outline: 20px solid #C51605;
+  }
+  
+  #di-about-color-code {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    translate: 130px 130px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 199;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  
+.main-header{
+    font-family: "Raleway", "sans-serif";
+    font-size: 33px;
+    color: #bc976d;
+    background-color: black;
+    text-align: center;
+}
+
+
+
+/*Dine In Menu Styling*/
+.menu-container{
+    margin-top: -11px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+/* From Uiverse.io by eslam-hany */ 
+.di-menu-card {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .di-menu-name{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 22px;
+    color: #463c31;
+    background-color: #bc976d;
+    font-weight: 900;
+    padding: 22px;
+    align-self: flex-end;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+  
+  .di-menu-card::before,
+  .di-menu-card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(188, 151, 109, 0.3);
+    transition: all 0.5s;
+  }
+  
+  .di-menu-card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .di-menu-card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .di-menu-card:hover::before,
+  .di-menu-card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .di-menu-card:hover:after {
+    content: "View More";
+    font-family: "Raleway" , "sans-serif";
+    font-size: 22px;
+    color: #bc976d;
+    background-color: #00000080;
+    font-weight: 900;
+  }
+
+
+.menu-card-1{
+    background-image: url("https://img.freepik.com/free-photo/photorealistic-lohri-festival-celebration-with-traditional-food_23-2151098301.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+}
+
+.menu-card-2{
+    background-image: url("https://img.freepik.com/free-photo/slices-italian-pizza-with-utensils-ingredients-black-kitchen-worktop_23-2148076119.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+}
+
+.menu-card-3{
+    background-image: url("https://img.freepik.com/free-photo/cocktail-refreshment-neo-futuristic-style_23-2151370308.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+}
+
+.menu-card-4{
+    background-image: url("https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+}
+
+.menu-card-5{
+    background-image: url("https://img.freepik.com/free-photo/delicious-roti-arrangement-table_23-2149033983.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+}
+
+.menu-card-6{
+    background-image: url("https://img.freepik.com/free-photo/high-angle-chicken-meal_23-2148825122.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+}
+
+
+/*Dine In Special offer Styling*/
+
+.special-container{
+    margin-top: -10px;
+    background-color: #bc976d;
+}
+
+.special-card{
+    min-height: 333px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.special-card-name{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 33px;
+    color: #463c31;
+    font-weight: 900;
+}
+
+.special-card-details{
+    font-family: "Josefin Sans", system-ui;
+    font-size: 17px;
+    color: black;
+}
+
+/* From Uiverse.io by Sharkotech */ 
+.di-special-card {
+    width: 333px;
+    height: 254px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #c1 {
+    background-image: url("https://img.freepik.com/free-photo/top-view-indian-dessert-arrangement_23-2149312330.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+  }
+  
+  #c2 {
+    background-image: url("https://img.freepik.com/free-photo/delicious-indian-dessert-arrangement-view_23-2149312354.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+  }
+  
+  #c3 {
+    background-image: url("https://img.freepik.com/free-photo/tasty-indian-dessert-plate-top-view_23-2149312387.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+  }
+  
+  #c4 {
+    background-image: url("https://img.freepik.com/free-photo/top-view-delicious-chocolate-truffles-ready-be-served_23-2148622311.jpg?ga=GA1.1.511339307.1716481744&semt=ais_hybrid");
+  }
+  
+  .di-special-main:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+  }
+  
+  .di-special-main:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+  }
+  
+  .di-special-main:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+  }
+  
+  .di-special-main:hover #c4 {
+    transform: translateX(50px) rotate(-10deg);
+  }
+  
+  #c1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+  }
+  
+  #c2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+  }
+  
+  #c3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+  }
+  
+  #c4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+  }
+  
+  .di-special-main {
+    margin-top: 22px;
+    height: 300px;
+    place-items: center;
+  }
+
+
+  /*Dine In Services Styling*/
+  .services-container{
+    margin-top: -10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .service-card{
+    width: 255px;
+    text-align: center;
+    padding: 11px;
+  }
+
+  .icon{
+    font-size: 66px;
+    color: #bc976d;
+    border: 2px solid #bc976d;
+    border-radius: 50%;
+    padding: 22px;
+  }
+
+  .service-name{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 33px;
+    color: #bc976d;
+    font-weight: 700;
+  }
+
+
+   /*Dine In Contacts Styling*/
+  .contact-container{
+    margin-top: -10px;
+    background-color: black;
+  }
+
+  .contact-card{
+    min-height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-logo{
+    width: 100%;
+  }
+
+  .contact-name{
+    font-family: "Raleway" , "sans-serif";
+    font-size: 22px;
+    color: #bc976d;
+  }
